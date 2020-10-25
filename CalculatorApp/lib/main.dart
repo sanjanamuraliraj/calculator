@@ -64,7 +64,7 @@ class CalcAppState extends State<CalcApp> {
               children: <Widget>[
                 Container(
                   child: Padding(
-                    padding: const EdgeInsets.only(right: 12),
+                    padding: const EdgeInsets.fromLTRB(0.0,30.0, 12.0, 12.0),
                     child: Text(
                       _history,
                       style: GoogleFonts.rubik(
@@ -79,7 +79,7 @@ class CalcAppState extends State<CalcApp> {
                 ),
                 Container(
                   child: Padding(
-                    padding: const EdgeInsets.all(12),
+                    padding: const EdgeInsets.fromLTRB(0.0,25.0, 12.0, 0.0),
                     child: Text(
                       _expression,
                       style: GoogleFonts.rubik(
@@ -92,14 +92,16 @@ class CalcAppState extends State<CalcApp> {
                   ),
                   alignment: Alignment(1.0, 1.0),
                 ),
-                SizedBox(height: 40),
+                SizedBox(
+                  height: 110
+                  ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: <Widget>[
                     CalcButton(
                       text: 'AC',
                       fillColor: 0xFF6C807F,
-                      textSize: 20,
+                      textSize: 19,
                       callback: allClear,
                     ),
                     CalcButton(
@@ -207,7 +209,7 @@ class CalcAppState extends State<CalcApp> {
                     CalcButton(
                       text: '00',
                       callback: numClick,
-                      textSize: 26,
+                      textSize: 24,
                     ),
                     CalcButton(
                       text: '=',

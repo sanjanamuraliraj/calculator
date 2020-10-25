@@ -24,6 +24,7 @@ class CalcButton extends StatelessWidget {
     return Container(
       margin: EdgeInsets.all(10),
       child: SizedBox(
+        
         width: 60,
         height: 60,
         child: FlatButton(
